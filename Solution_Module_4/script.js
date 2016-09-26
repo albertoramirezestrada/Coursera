@@ -77,9 +77,6 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
   
 // Look up these methods on Mozilla Developer Network web site if needed.
   
-// var firstLetter =
-
-  
 // STEP 12:
   
 // Compare the 'firstLetter' retrieved in STEP 11 to lower case
@@ -91,11 +88,12 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // name in the loop.
   
 
-
-for (var i = 0; i < names.length;i++) {
 
-  
-	if (names[i].toLowerCase().charAt(0) == "j" ) {
+
+for (var i = 0; i < names.length;i++) {
+	
+  	var firstLetter = names[i].toLowerCase().charAt(0);
+	if ( firstLetter == "j" ) {
 
 		byeSpeaker.sayGoodBye(
 names[i]);  
